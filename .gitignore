@@ -1,0 +1,8 @@
+data/
+shots/
+*.exe
+*.log
+__pycache__/
+engine/sentinel_engine
+engine/test_engine
+engine/tmpdata/

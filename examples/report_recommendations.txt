@@ -1,0 +1,13 @@
+================================================================
+SENTINEL  |  Recommendation Report
+================================================================
+Organization : Northwind Financial
+Generated    : 2026-10-30 20:10:58
+
+1. [MEDIUM] Enable Awareness Training to 80% - protection against Phishing rises from 47% to 73%.
+2. [MEDIUM] Enable Intrusion Detection to 80% - protection against SQL Injection rises from 49% to 74%.
+3. [HIGH] Restore Database-1 (health 42%) before the next attack lands.
+4. [HIGH] Restore Database-2 (health 46%) before the next attack lands.
+
+----------------------------------------------------------------
+Simulation only. No real systems were touched.

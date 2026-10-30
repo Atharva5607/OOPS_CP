@@ -1,0 +1,5 @@
+incidents=7
+blocked=3
+partial=1
+successful=3
+security_score=63.0737

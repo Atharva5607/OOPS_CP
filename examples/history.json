@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "incidents": [
+    {
+      "id": 7,
+      "time": "2026-10-30 20:10:58",
+      "attackKey": "ransomware",
+      "attack": "Ransomware",
+      "target": "Database-1",
+      "outcome": "SUCCESSFUL",
+      "probability": 0.484,
+      "attackStrength": 72.7,
+      "defenseStrength": 64.2,
+      "damage": 57.6,
+      "score": 63.1
+    },
+    {
+      "id": 6,
+      "time": "2026-10-30 20:10:57",
+      "attackKey": "zeroday",
+      "attack": "Zero-Day",
+      "target": "Database-2",
+      "outcome": "SUCCESSFUL",
+      "probability": 0.811,
+      "attackStrength": 69.9,
+      "defenseStrength": 28.8,
+      "damage": 54,
+      "score": 64.2
+    },
+    {
+      "id": 5,
+      "time": "2026-10-30 20:10:57",
+      "attackKey": "bruteforce",
+      "attack": "Brute Force",
+      "target": "Network-1",
+      "outcome": "BLOCKED",
+      "probability": 0.03,
+      "attackStrength": 36.1,
+      "defenseStrength": 77.5,
+      "damage": 0,
+      "score": 65.3
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "blocked": 3,
+    "partial": 1,
+    "successful": 3,
+    "blockRate": 42.9,
+    "avgProbability": 0.482
+  },
+  "logBytes": 687
+}

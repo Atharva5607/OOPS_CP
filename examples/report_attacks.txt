@@ -1,0 +1,18 @@
+================================================================
+SENTINEL  |  Attack Log Report
+================================================================
+Organization : Northwind Financial
+Generated    : 2026-10-30 20:10:58
+
+ID   Time                 Attack         Target                Outcome            Prob
+----------------------------------------------------------------
+1    2026-10-30 20:10:57  Phishing       Employee-Workstations PARTIALLY_BLOCKED  69.5%
+2    2026-10-30 20:10:57  DDoS           Server-1              SUCCESSFUL         40.8%
+3    2026-10-30 20:10:57  SQL Injection  Database-1            BLOCKED            57.1%
+4    2026-10-30 20:10:57  Ransomware     Server-2              BLOCKED            37.3%
+5    2026-10-30 20:10:57  Brute Force    Network-1             BLOCKED            3.0%
+6    2026-10-30 20:10:57  Zero-Day       Database-2            SUCCESSFUL         81.1%
+7    2026-10-30 20:10:58  Ransomware     Database-1            SUCCESSFUL         48.4%
+
+----------------------------------------------------------------
+Simulation only. No real systems were touched.

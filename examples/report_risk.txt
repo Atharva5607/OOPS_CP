@@ -1,0 +1,26 @@
+================================================================
+SENTINEL  |  Risk Assessment Report
+================================================================
+Organization : Northwind Financial
+Generated    : 2026-10-30 20:10:58
+
+Protection against each attack type
+----------------------------------------------------------------
+Phishing      [#########...........] 47.0%
+Brute Force   [################....] 77.5%
+Malware       [##############......] 70.4%
+Ransomware    [#############.......] 64.2%
+SQL Injection [##########..........] 49.4%
+DDoS          [#############.......] 64.4%
+Zero-Day      [######..............] 28.8%
+
+Weak points (most severe first)
+----------------------------------------------------------------
+* [attack] Zero-Day - Only 28% protection against a power-92 attack
+* [asset] Database-1 - Degraded to 42% health after incidents
+* [asset] Database-2 - Degraded to 46% health after incidents
+* [attack] Phishing - Only 46% protection against a power-70 attack
+* [attack] SQL Injection - Only 49% protection against a power-70 attack
+
+----------------------------------------------------------------
+Simulation only. No real systems were touched.

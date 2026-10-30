@@ -1,0 +1,122 @@
+{
+  "ok": true,
+  "risk": {
+    "score": 63.1,
+    "threat": "MODERATE",
+    "averageHealth": 85.8,
+    "byAttack": [
+      {
+        "key": "phishing",
+        "name": "Phishing",
+        "power": 70,
+        "defense": 47
+      },
+      {
+        "key": "bruteforce",
+        "name": "Brute Force",
+        "power": 60,
+        "defense": 77.5
+      },
+      {
+        "key": "malware",
+        "name": "Malware",
+        "power": 75,
+        "defense": 70.4
+      },
+      {
+        "key": "ransomware",
+        "name": "Ransomware",
+        "power": 85,
+        "defense": 64.2
+      },
+      {
+        "key": "sqli",
+        "name": "SQL Injection",
+        "power": 70,
+        "defense": 49.4
+      },
+      {
+        "key": "ddos",
+        "name": "DDoS",
+        "power": 72,
+        "defense": 64.4
+      },
+      {
+        "key": "zeroday",
+        "name": "Zero-Day",
+        "power": 92,
+        "defense": 28.8
+      }
+    ],
+    "weakPoints": [
+      {
+        "kind": "attack",
+        "subject": "Zero-Day",
+        "detail": "Only 28% protection against a power-92 attack",
+        "severity": 65.5
+      },
+      {
+        "kind": "asset",
+        "subject": "Database-1",
+        "detail": "Degraded to 42% health after incidents",
+        "severity": 57.6
+      },
+      {
+        "kind": "asset",
+        "subject": "Database-2",
+        "detail": "Degraded to 46% health after incidents",
+        "severity": 54
+      },
+      {
+        "kind": "attack",
+        "subject": "Phishing",
+        "detail": "Only 46% protection against a power-70 attack",
+        "severity": 37.1
+      },
+      {
+        "kind": "attack",
+        "subject": "SQL Injection",
+        "detail": "Only 49% protection against a power-70 attack",
+        "severity": 35.4
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "defenseKey": "training",
+      "defense": "Awareness Training",
+      "attack": "Phishing",
+      "priority": "MEDIUM",
+      "text": "Enable Awareness Training to 80% - protection against Phishing rises from 47% to 73%.",
+      "from": 47,
+      "to": 72.8
+    },
+    {
+      "defenseKey": "ids",
+      "defense": "Intrusion Detection",
+      "attack": "SQL Injection",
+      "priority": "MEDIUM",
+      "text": "Enable Intrusion Detection to 80% - protection against SQL Injection rises from 49% to 74%.",
+      "from": 49.4,
+      "to": 73.7
+    },
+    {
+      "defenseKey": "",
+      "defense": "Recovery",
+      "attack": "Database-1",
+      "priority": "HIGH",
+      "text": "Restore Database-1 (health 42%) before the next attack lands.",
+      "from": 0,
+      "to": 0
+    },
+    {
+      "defenseKey": "",
+      "defense": "Recovery",
+      "attack": "Database-2",
+      "priority": "HIGH",
+      "text": "Restore Database-2 (health 46%) before the next attack lands.",
+      "from": 0,
+      "to": 0
+    }
+  ]
+}

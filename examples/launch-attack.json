@@ -1,0 +1,416 @@
+{
+  "ok": true,
+  "result": {
+    "attackKey": "ransomware",
+    "attack": "Ransomware",
+    "target": "Database-1",
+    "targetType": "database",
+    "attackStrength": 72.7,
+    "defenseStrength": 64.2,
+    "probability": 0.484,
+    "roll": 0.238,
+    "outcome": "SUCCESSFUL",
+    "damage": 57.6,
+    "healthAfter": 42.4,
+    "scoreAfter": 63.1,
+    "path": [
+      "Initial access",
+      "Privilege escalation",
+      "Backups discovered",
+      "Files encrypted",
+      "Ransom note on Database-1"
+    ],
+    "layers": [
+      {
+        "name": "Security policy",
+        "strength": 12
+      },
+      {
+        "name": "Firewall",
+        "strength": 21
+      },
+      {
+        "name": "Antivirus",
+        "strength": 45
+      },
+      {
+        "name": "Multi-Factor Auth",
+        "strength": 6.5
+      }
+    ],
+    "recommendation": "Enable Intrusion Detection to 80% - protection against Ransomware rises from 64% to 77%."
+  },
+  "state": {
+    "ok": true,
+    "organization": {
+      "name": "Northwind Financial",
+      "securityLevel": 3,
+      "employees": 240,
+      "averageHealth": 85.8,
+      "assets": [
+        {
+          "name": "Server-1",
+          "type": "server",
+          "criticality": 7,
+          "vulnerability": 0.405,
+          "health": 74.8
+        },
+        {
+          "name": "Server-2",
+          "type": "server",
+          "criticality": 7,
+          "vulnerability": 0.405,
+          "health": 100
+        },
+        {
+          "name": "Server-3",
+          "type": "server",
+          "criticality": 7,
+          "vulnerability": 0.405,
+          "health": 100
+        },
+        {
+          "name": "Server-4",
+          "type": "server",
+          "criticality": 7,
+          "vulnerability": 0.405,
+          "health": 100
+        },
+        {
+          "name": "Database-1",
+          "type": "database",
+          "criticality": 9,
+          "vulnerability": 0.45,
+          "health": 42.4
+        },
+        {
+          "name": "Database-2",
+          "type": "database",
+          "criticality": 9,
+          "vulnerability": 0.45,
+          "health": 46
+        },
+        {
+          "name": "Network-1",
+          "type": "network",
+          "criticality": 6,
+          "vulnerability": 0.36,
+          "health": 100
+        },
+        {
+          "name": "Network-2",
+          "type": "network",
+          "criticality": 6,
+          "vulnerability": 0.36,
+          "health": 100
+        },
+        {
+          "name": "Network-3",
+          "type": "network",
+          "criticality": 6,
+          "vulnerability": 0.36,
+          "health": 100
+        },
+        {
+          "name": "Employee-Workstations",
+          "type": "employee",
+          "criticality": 5,
+          "vulnerability": 0.592,
+          "health": 94.7
+        }
+      ],
+      "defenses": [
+        {
+          "key": "firewall",
+          "name": "Firewall",
+          "enabled": true,
+          "level": 70,
+          "coverage": {
+            "phishing": 0.05,
+            "bruteforce": 0.55,
+            "malware": 0.35,
+            "ransomware": 0.3,
+            "sqli": 0.55,
+            "ddos": 0.85,
+            "zeroday": 0.25
+          },
+          "damageReduction": 0
+        },
+        {
+          "key": "ids",
+          "name": "Intrusion Detection",
+          "enabled": false,
+          "level": 50,
+          "coverage": {
+            "phishing": 0.2,
+            "bruteforce": 0.65,
+            "malware": 0.55,
+            "ransomware": 0.45,
+            "sqli": 0.6,
+            "ddos": 0.5,
+            "zeroday": 0.45
+          },
+          "damageReduction": 0
+        },
+        {
+          "key": "antivirus",
+          "name": "Antivirus",
+          "enabled": true,
+          "level": 60,
+          "coverage": {
+            "phishing": 0.3,
+            "bruteforce": 0,
+            "malware": 0.9,
+            "ransomware": 0.75,
+            "sqli": 0,
+            "ddos": 0,
+            "zeroday": 0.3
+          },
+          "damageReduction": 0
+        },
+        {
+          "key": "mfa",
+          "name": "Multi-Factor Auth",
+          "enabled": true,
+          "level": 65,
+          "coverage": {
+            "phishing": 0.55,
+            "bruteforce": 0.9,
+            "malware": 0.05,
+            "ransomware": 0.1,
+            "sqli": 0.1,
+            "ddos": 0,
+            "zeroday": 0.1
+          },
+          "damageReduction": 0
+        },
+        {
+          "key": "encryption",
+          "name": "Encryption",
+          "enabled": false,
+          "level": 50,
+          "coverage": {
+            "phishing": 0.1,
+            "bruteforce": 0.25,
+            "malware": 0.2,
+            "ransomware": 0.3,
+            "sqli": 0.35,
+            "ddos": 0,
+            "zeroday": 0.2
+          },
+          "damageReduction": 0
+        },
+        {
+          "key": "training",
+          "name": "Awareness Training",
+          "enabled": false,
+          "level": 50,
+          "coverage": {
+            "phishing": 0.85,
+            "bruteforce": 0.2,
+            "malware": 0.35,
+            "ransomware": 0.3,
+            "sqli": 0.05,
+            "ddos": 0,
+            "zeroday": 0.1
+          },
+          "damageReduction": 0
+        },
+        {
+          "key": "backup",
+          "name": "Backup System",
+          "enabled": false,
+          "level": 50,
+          "coverage": {
+            "phishing": 0,
+            "bruteforce": 0,
+            "malware": 0.15,
+            "ransomware": 0.4,
+            "sqli": 0,
+            "ddos": 0,
+            "zeroday": 0.1
+          },
+          "damageReduction": 0
+        }
+      ]
+    },
+    "risk": {
+      "score": 63.1,
+      "threat": "MODERATE",
+      "averageHealth": 85.8,
+      "byAttack": [
+        {
+          "key": "phishing",
+          "name": "Phishing",
+          "power": 70,
+          "defense": 47
+        },
+        {
+          "key": "bruteforce",
+          "name": "Brute Force",
+          "power": 60,
+          "defense": 77.5
+        },
+        {
+          "key": "malware",
+          "name": "Malware",
+          "power": 75,
+          "defense": 70.4
+        },
+        {
+          "key": "ransomware",
+          "name": "Ransomware",
+          "power": 85,
+          "defense": 64.2
+        },
+        {
+          "key": "sqli",
+          "name": "SQL Injection",
+          "power": 70,
+          "defense": 49.4
+        },
+        {
+          "key": "ddos",
+          "name": "DDoS",
+          "power": 72,
+          "defense": 64.4
+        },
+        {
+          "key": "zeroday",
+          "name": "Zero-Day",
+          "power": 92,
+          "defense": 28.8
+        }
+      ],
+      "weakPoints": [
+        {
+          "kind": "attack",
+          "subject": "Zero-Day",
+          "detail": "Only 28% protection against a power-92 attack",
+          "severity": 65.5
+        },
+        {
+          "kind": "asset",
+          "subject": "Database-1",
+          "detail": "Degraded to 42% health after incidents",
+          "severity": 57.6
+        },
+        {
+          "kind": "asset",
+          "subject": "Database-2",
+          "detail": "Degraded to 46% health after incidents",
+          "severity": 54
+        },
+        {
+          "kind": "attack",
+          "subject": "Phishing",
+          "detail": "Only 46% protection against a power-70 attack",
+          "severity": 37.1
+        },
+        {
+          "kind": "attack",
+          "subject": "SQL Injection",
+          "detail": "Only 49% protection against a power-70 attack",
+          "severity": 35.4
+        }
+      ]
+    },
+    "recommendations": [
+      {
+        "defenseKey": "training",
+        "defense": "Awareness Training",
+        "attack": "Phishing",
+        "priority": "MEDIUM",
+        "text": "Enable Awareness Training to 80% - protection against Phishing rises from 47% to 73%.",
+        "from": 47,
+        "to": 72.8
+      },
+      {
+        "defenseKey": "ids",
+        "defense": "Intrusion Detection",
+        "attack": "SQL Injection",
+        "priority": "MEDIUM",
+        "text": "Enable Intrusion Detection to 80% - protection against SQL Injection rises from 49% to 74%.",
+        "from": 49.4,
+        "to": 73.7
+      },
+      {
+        "defenseKey": "",
+        "defense": "Recovery",
+        "attack": "Database-1",
+        "priority": "HIGH",
+        "text": "Restore Database-1 (health 42%) before the next attack lands.",
+        "from": 0,
+        "to": 0
+      },
+      {
+        "defenseKey": "",
+        "defense": "Recovery",
+        "attack": "Database-2",
+        "priority": "HIGH",
+        "text": "Restore Database-2 (health 46%) before the next attack lands.",
+        "from": 0,
+        "to": 0
+      }
+    ],
+    "stats": {
+      "total": 7,
+      "blocked": 3,
+      "partial": 1,
+      "successful": 3,
+      "blockRate": 42.9,
+      "avgProbability": 0.482
+    },
+    "attacks": [
+      {
+        "key": "phishing",
+        "name": "Phishing",
+        "description": "Deceptive emails that trick staff into handing over credentials.",
+        "power": 70,
+        "bypass": 0.15
+      },
+      {
+        "key": "bruteforce",
+        "name": "Brute Force",
+        "description": "Automated password guessing against exposed login services.",
+        "power": 60,
+        "bypass": 0
+      },
+      {
+        "key": "malware",
+        "name": "Malware",
+        "description": "Malicious payload that executes on a host and spreads.",
+        "power": 75,
+        "bypass": 0
+      },
+      {
+        "key": "ransomware",
+        "name": "Ransomware",
+        "description": "Encrypts business data and demands payment for the key.",
+        "power": 85,
+        "bypass": 0
+      },
+      {
+        "key": "sqli",
+        "name": "SQL Injection",
+        "description": "Crafted input that makes a database run attacker-chosen queries.",
+        "power": 70,
+        "bypass": 0
+      },
+      {
+        "key": "ddos",
+        "name": "DDoS",
+        "description": "Floods a service with traffic until legitimate users are locked out.",
+        "power": 72,
+        "bypass": 0
+      },
+      {
+        "key": "zeroday",
+        "name": "Zero-Day",
+        "description": "Exploits an unknown flaw that signature-based tools cannot recognise.",
+        "power": 92,
+        "bypass": 0.35
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+================================================================
+SENTINEL  |  Executive Summary Report
+================================================================
+Organization : Northwind Financial
+Generated    : 2026-10-30 20:10:58
+
+Security score : 63.1 / 100  [#############.......]
+Threat level   : MODERATE
+Policy level   : 3 / 5
+Employees      : 240
+Assets         : 10 (average health 85.8%)
+
+Defenses
+----------------------------------------------------------------
+Firewall              ON   70  %
+Intrusion Detection   OFF  50  %
+Antivirus             ON   60  %
+Multi-Factor Auth     ON   65  %
+Encryption            OFF  50  %
+Awareness Training    OFF  50  %
+Backup System         OFF  50  %
+
+Simulation statistics
+----------------------------------------------------------------
+Attacks launched : 7
+Blocked          : 3
+Partially blocked: 1
+Successful       : 3
+
+----------------------------------------------------------------
+Simulation only. No real systems were touched.
