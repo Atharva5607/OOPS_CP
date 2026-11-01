@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: sentinel
+    runtime: python
+    plan: free
+    branch: main
+    buildCommand: pip install -r backend/requirements.txt && cd engine && g++ -std=c++17 -O2 -Iinclude src/main.cpp src/Reports.cpp -o sentinel_engine
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /state
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: SENTINEL_DATA
+        value: /tmp/sentinel_data
